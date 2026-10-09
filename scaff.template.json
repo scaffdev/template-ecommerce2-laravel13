@@ -3,6 +3,15 @@
   "name": "template-ecommerce2-laravel13",
   "slug": "template-ecommerce2-laravel13",
   "framework": "laravel",
-  "provides": {},
-  "removalGuides": {}
+  "provides": {
+    "midtrans": [
+      "app/Services/MidtransService.php",
+      "config/midtrans.php",
+      "app/Http/Controllers/PaymentController.php",
+      "resources/views/checkout/pay.blade.php"
+    ]
+  },
+  "removalGuides": {
+    "midtrans": "REMOVE-midtrans.md"
+  }
 }
